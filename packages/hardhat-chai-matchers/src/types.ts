@@ -33,6 +33,7 @@ declare namespace Chai {
       account: any[],
       balance: any[]
     ): AsyncAssertion;
+    changeFnEvaluation(fn: (blockTag: string) => any, change: any): AsyncAssertion;
   }
 
   interface NumericComparison {
